@@ -1,0 +1,9 @@
+.page-header {
+  background-color: #1f1f1f;
+}
+
+.page-header__logo {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
