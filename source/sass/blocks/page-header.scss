@@ -1,9 +1,14 @@
 .page-header {
   background-color: #1f1f1f;
+  position: relative;
+  width: 100%;
 }
 
 .page-header__logo {
   @media (min-width: $desktop-width) {
     display: none;
   }
+
+  display: block;
+  margin-left: 15px;
 }

@@ -1,0 +1,222 @@
+.promo {
+  position: relative;
+  background-color: #1f1f1f;
+  min-height: 825px;
+  background-image: url("/img/main-bg.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 320px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    background-image: url("/img/main-bg-tablet.jpg");
+    min-height: 340px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    background-image: url("/img/main-bg-mobile.jpg");
+    min-height: 390px;
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    padding-left: 150px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 120px;
+    padding-left: 0;
+  }
+}
+
+.promo__left {
+  width: 393px;
+
+  @media (min-width: $mobile-width) and (max-width: 1023px) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 170px;
+  }
+}
+
+.promo__left-logo {
+  display: block;
+  margin-bottom: 30px;
+
+  @media (min-width: $mobile-width) and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.promo__left-header {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+  color: $text-on-dark;
+  margin: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    font-size: 30px;
+    line-height: 42px;
+    width: 288px;
+    margin: 0 auto;
+  }
+}
+
+.promo__left-text {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: $text-on-dark;
+  opacity: 0.8;
+  margin: 0;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px)  {
+    font-size: 18px;
+    width: 435px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    font-size: 18px;
+    width: 288px;
+    margin: 0 auto;
+  }
+}
+
+.promo__right {
+  width: 340px;
+  text-align: center;
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.promo__right-text {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  color: $text-on-dark;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    color: #000000;
+    font-size: 18px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    color: #000000;
+    font-size: 18px;
+    width: 288px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+.promo__right-form-name,
+.promo__right-form-tel {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.promo__right-form-name input,
+.promo__right-form-tel input {
+  width: 327px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #c9ccd4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+
+  &::placeholder {
+    font-family: $main-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #1c1c1c;
+    opacity: 0.5;
+    padding-top: 14px;
+    padding-left: 29px;
+  }
+
+  &:hover {
+    border-color: #0ad9c6;
+    border-width: 2px;
+  }
+
+  &:active {
+    border-color: orange;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    width: 321px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    width: 288px;
+  }
+}
+
+.promo__right-form-button {
+  width: 326px;
+  height: 51px;
+  background: #0ad9c6;
+  border-radius: 6px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  &:hover {
+    background: #09beac;
+  }
+
+  &:active {
+    background: #0ad9c6;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    width: 321px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    width: 288px;
+  }
+}
