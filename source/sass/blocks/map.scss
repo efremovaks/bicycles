@@ -1,0 +1,57 @@
+.map {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.map__header {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: $main-text-color;
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+
+.map__text {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 31px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  width: 555px;
+  margin: 0 auto;
+  padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    width: 100%;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    width: 288px;
+  }
+}
+
+.map img {
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    width: 698px;
+    height: 545px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+  }
+}
