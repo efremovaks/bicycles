@@ -1,0 +1,119 @@
+.video {
+  background-color: #131314;
+  min-height: 706px;
+  margin-bottom: 150px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    min-height: 413px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    min-height: 384px;
+  }
+}
+
+.video__header {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: $text-on-dark;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 50px;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+
+.video__text {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $text-on-dark;
+  opacity: 0.7;
+  width: 340px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    width: 430px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    width: 288px;
+  }
+}
+
+.video__player {
+  position: relative;
+}
+
+.video__player img {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 929px;
+  height: 522px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    width: 503px;
+    height: 282px;
+    top: 35px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    width: 288px;
+    height: 161px;
+    top: 65px;
+  }
+}
+
+.video__button {
+  position: absolute;
+  content: "";
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("/img/play-btn.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    top: 130px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    top: 95px;
+  }
+}
