@@ -1,0 +1,128 @@
+.form {
+  width: 340px;
+  text-align: center;
+  position: absolute;
+  top: 323px;
+  right: 54px;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    top: 410px;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    width: 100%;
+    top: 460px;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.form__text {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  color: $text-on-dark;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    color: #000000;
+    font-size: 18px;
+    width: 288px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+.form__form-name,
+.form__form-tel {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form__form-name input,
+.form__form-tel input {
+  width: 327px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #c9ccd4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+
+  &::placeholder {
+    font-family: $main-font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #1c1c1c;
+    opacity: 0.5;
+    padding-top: 14px;
+    padding-left: 29px;
+  }
+
+  &:hover {
+    border-color: #0ad9c6;
+    border-width: 2px;
+  }
+
+  &:active {
+    border-color: orange;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    width: 321px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    width: 288px;
+  }
+}
+
+.form__form-button {
+  width: 326px;
+  height: 51px;
+  background: #0ad9c6;
+  border-radius: 6px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  &:hover {
+    background: #09beac;
+  }
+
+  &:active {
+    background: #0ad9c6;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    width: 321px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    width: 288px;
+  }
+}

@@ -30,16 +30,16 @@
         <button class="main-nav__menu-button" type="button"></button>
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
-            <a href="#">О нас</a>
+            <a href="#about">О нас</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="#">Виды велосипедов</a>
+            <a href="#types">Виды велосипедов</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="#">Видео про велосипеды</a>
+            <a href="#video">Видео про велосипеды</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="#">Контакты</a>
+            <a href="#map">Контакты</a>
           </li>
         </ul>
       </div>
@@ -67,24 +67,25 @@
             <h1 class="promo__left-header">Мы продаем велосипеды</h1>
             <p class="promo__left-text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
           </div>
-          <div class="promo__right">
-            <p class="promo__right-text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-            <form class="promo__right-form" action="https://echo.htmlacademy.ru" method="POST">
-              <p class="promo__right-form-name">
-                <label for="promo-name"></label>
-                <input id="promo-name" type="text" placeholder="Введите Ваше Имя" required>
-              </p>
-              <p class="promo__right-form-tel">
-                <label for="promo-tel"></label>
-                <input id="promo-tel" type="tel" placeholder="Введите Ваш номер телефона" required>
-              </p>
-              <button class="promo__right-form-button" type="submit">Подобрать велосипед мечты</button>
-            </form>
-          </div>
+
         </div>
       </div>
     </section>
-    <section class="about">
+    <div class="form">
+      <p class="form__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+      <form class="form__form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="form__form-name">
+          <label for="form-name"></label>
+          <input id="form-name" type="text" placeholder="Введите Ваше Имя" required>
+        </p>
+        <p class="form__form-tel">
+          <label for="form-tel"></label>
+          <input id="form-tel" type="tel" placeholder="Введите Ваш номер телефона" required>
+        </p>
+        <button class="form__form-button" type="submit">Подобрать велосипед мечты</button>
+      </form>
+    </div>
+    <section class="about" id="about">
       <div class="wrapper">
         <h2 class="about__header">Несколько фактов о нас</h2>
         <ul class="about__list">
@@ -107,7 +108,7 @@
         </ul>
       </div>
     </section>
-    <section class="types">
+    <section class="types" id="types">
       <div class="wrapper">
         <h2 class="types__header">Виды велосипедов</h2>
         <ul class="types__list">
@@ -144,7 +145,7 @@
         </ul>
       </div>
     </section>
-    <section class="video">
+    <section class="video" id="video">
       <div class="video__wrapper">
         <h2 class="video__header">Видео про велосипеды</h2>
         <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
@@ -158,10 +159,9 @@
             <img src="img/video.jpg" srcset="img/video.jpg" alt="Видео про велосипеды">
           </picture>
         </div>
-
       </div>
     </section>
-    <section class="map">
+    <section class="map" id="map">
       <div class="map__wrapper">
         <h2 class="map__header">Как нас найти?</h2>
         <p class="map__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
@@ -194,6 +194,14 @@
       </ul>
     </div>
   </footer>
+  <section class="modal">
+    <div class="modal__wrapper">
+      <h2 class="modal__header">Заявка принята (:</h2>
+      <p class="modal__text">Мы перезвоним!</p>
+      <button class="modal__button" type="button">Продолжить</button>
+    </div>
+  </section>
+
   <script src="js/script.js"></script>
 </body>
 

@@ -98,7 +98,7 @@
     font-size: 20px;
     line-height: 140%;
     color: #48494d;
-    padding-left: 16px;
+    padding-left: 40px;
     padding-top: 17px;
 
     &:hover {
@@ -203,6 +203,7 @@
 .main-nav--open .main-nav__list {
   position: absolute;
   top: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .main-nav--nojs .main-nav__menu-button {

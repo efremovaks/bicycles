@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-left: 20px;
 }
 
 .page-footer__list-item {
@@ -35,6 +36,12 @@
 
   &:active {
     color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: 767px) {
+  .page-footer__list-item--mail {
+    padding-bottom: 20px;
   }
 }
 

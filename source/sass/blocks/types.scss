@@ -1,6 +1,14 @@
 .types {
   background-color: #f6f7f9;
   min-height: 1038px;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    min-height: 949px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    min-height: 1320px;
+  }
 }
 
 .types__header {
@@ -15,6 +23,18 @@
   margin: 0;
   margin-bottom: 60px;
   padding-top: 150px;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    font-size: 24px;
+    padding-top: 54px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    font-size: 24px;
+    padding-top: 55px;
+    margin-bottom: 37px;
+  }
 }
 
 .types__list {
@@ -34,8 +54,8 @@
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     grid-template-columns: 1fr;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -49,7 +69,7 @@
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
-    margin-bottom: 70px;
+    margin-bottom: 25px;
   }
 
 }
@@ -65,6 +85,10 @@
   color: #000000;
   margin: 0;
   margin-top: 20px;
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    margin-top: 5px;
+  }
 }
 
 .types__list-item--road::before {
@@ -90,8 +114,8 @@
     width: 127px;
     height: 127px;
     background-image: url("/img/type-big-ring-tablet.png");
-    top: 190px;
-    left: -30px;
+    top: 224px;
+    left: -10px;
   }
 }
 
@@ -155,7 +179,7 @@
     background-image: url("/img/type-min-ring-tablet.png");
     width: 68px;
     height: 68px;
-    top: -25px;
-    right: -25px;
+    top: -12px;
+    right: -10px;
   }
 }
