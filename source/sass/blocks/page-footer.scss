@@ -6,7 +6,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-left: 20px;
+  padding-left: 42px;
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    padding-left: 60px;
+  }
 }
 
 .page-footer__list-item {
@@ -50,8 +54,8 @@
   content: "";
   width: 26px;
   height: 20px;
-  top: 5px;
-  left: -35px;
+  top: 6px;
+  left: -42px;
   background-image: url("/img/mail.png");
   background-repeat: no-repeat;
 }
@@ -62,7 +66,7 @@
   width: 21px;
   height: 24px;
   top: 5px;
-  left: -35px;
+  left: -37px;
   background-image: url("/img/phone.png");
   background-repeat: no-repeat;
 }

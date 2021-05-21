@@ -3,7 +3,7 @@
   text-align: center;
   position: absolute;
   top: 323px;
-  left: 61%;
+  left: 58%;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     top: 410px;
@@ -12,14 +12,14 @@
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
-    width: 100%;
+    width: 288px;
     top: 460px;
     left: 50%;
     transform: translateX(-50%);
   }
 }
 
-.form__text {
+.form p {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 600;
@@ -45,14 +45,7 @@
   }
 }
 
-.form__form-name,
-.form__form-tel {
-  margin: 0;
-  margin-bottom: 20px;
-}
-
-.form__form-name input,
-.form__form-tel input {
+.form form input {
   width: 327px;
   height: 48px;
   background: #ffffff;
@@ -61,6 +54,8 @@
   border-radius: 6px;
   cursor: pointer;
   outline: none;
+  margin-bottom: 20px;
+  padding-left: 20px;
 
   &::placeholder {
     font-family: $main-font-family;
@@ -71,12 +66,11 @@
     color: #1c1c1c;
     opacity: 0.5;
     padding-top: 14px;
-    padding-left: 29px;
+    padding-left: 10px;
   }
 
   &:hover {
     border-color: #0ad9c6;
-    border-width: 2px;
   }
 
   &:active {
@@ -92,12 +86,12 @@
   }
 }
 
-.form__form-button {
+.form__button {
   width: 326px;
   height: 51px;
   background: #0ad9c6;
   border-radius: 6px;
-  font-family: Open Sans;
+  font-family: $main-font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;

@@ -3,15 +3,20 @@
   min-height: 1038px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
-    min-height: 949px;
+    min-height: 940px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
-    min-height: 1320px;
+    min-height: 1326px;
   }
 }
 
-.types__header {
+.types__wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.types h2 {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 600;
@@ -22,17 +27,18 @@
   text-align: center;
   margin: 0;
   margin-bottom: 60px;
-  padding-top: 150px;
+  padding-top: 155px;
+  padding-left: 18px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     font-size: 24px;
-    padding-top: 54px;
+    padding-top: 46px;
     margin-bottom: 35px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     font-size: 24px;
-    padding-top: 55px;
+    padding-top: 62px;
     margin-bottom: 37px;
   }
 }
@@ -41,21 +47,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-left: -43px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 58px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     grid-template-columns: 1fr;
     padding-left: 0;
     padding-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -71,7 +76,6 @@
   @media (min-width: $mobile-width) and (max-width: 767px) {
     margin-bottom: 25px;
   }
-
 }
 
 .types__list-item p {
@@ -87,7 +91,17 @@
   margin-top: 20px;
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
-    margin-top: 5px;
+    margin-top: 18px;
+  }
+}
+
+.types__list-item img {
+  width: 342px;
+
+  @media (min-width: $mobile-width) and (max-width: 1023px) {
+    width: 270px;
+    height: 300px;
+    border-radius: 15px;
   }
 }
 
@@ -99,28 +113,28 @@
   z-index: -1;
   background-image: url("/img/type-big-ring.png");
   background-repeat: no-repeat;
-  top: 95px;
-  left: -52px;
+  top: 157px;
+  left: -58px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     width: 127px;
     height: 127px;
     background-image: url("/img/type-big-ring-tablet.png");
-    top: 205px;
-    left: -30px;
+    top: 202px;
+    left: -37px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     width: 127px;
     height: 127px;
     background-image: url("/img/type-big-ring-tablet.png");
-    top: 224px;
-    left: -10px;
+    top: 199px;
+    left: 0;
   }
 }
 
 .types__list-item--mountain {
-  padding-top: 20px;
+  padding-top: 29px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     padding-top: 0;
@@ -146,40 +160,48 @@
   }
 
   &::before {
-    top: 0;
+    top: 11px;
     left: -20px;
   }
 
   &::after {
-    bottom: 65px;
-    right: -17px;
+    bottom: 31px;
+    right: -23px;
   }
 }
 
-.types__list-item--childe::before {
-  content: "";
-  position: absolute;
-  width: 95px;
-  height: 95px;
-  z-index: 2;
-  top: -30px;
-  right: -35px;
-  background-image: url("/img/type-min-ring.png");
-  background-repeat: no-repeat;
+.types__list-item--childe {
+  margin-top: -10px;
 
-  @media (min-width: $tablet-width) and (max-width: 1023px) {
-    background-image: url("/img/type-min-ring-tablet.png");
-    width: 68px;
-    height: 68px;
-    top: -25px;
-    right: -50px;
+  @media (min-width: $mobile-width) and (max-width: 1023px) {
+    margin-top: 0;
   }
 
-  @media (min-width: $mobile-width) and (max-width: 767px) {
-    background-image: url("/img/type-min-ring-tablet.png");
-    width: 68px;
-    height: 68px;
-    top: -12px;
-    right: -10px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    z-index: 2;
+    top: -30px;
+    right: -35px;
+    background-image: url("/img/type-min-ring.png");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) and (max-width: 1023px) {
+      background-image: url("/img/type-min-ring-tablet.png");
+      width: 68px;
+      height: 68px;
+      top: -18px;
+      right: -26px;
+    }
+
+    @media (min-width: $mobile-width) and (max-width: 767px) {
+      background-image: url("/img/type-min-ring-tablet.png");
+      width: 68px;
+      height: 68px;
+      top: -13px;
+      right: 0;
+    }
   }
 }

@@ -5,26 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Велосипеды</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
-        <a class="page-header__logo" href="#">
-          <svg class="page-header__logo" width="68" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.3636 0v20.0455h-3.2931V5.82273L8.97273 7.20682 6.825 9.975l-.09546.0955-.14318-.0955-2.14772-2.76818L3.34091 5.775v14.2705H0V0h3.34091l3.38863 4.29545L10.0705 0h3.2931zM8.30444 10.0704l-.09546-.09542.09546.09542z"
-              fill="#0AD9C6" />
-            <path
-              d="M8.44787 9.97498l-.09546.09542h-.04772l.14318-.09542zM38.2092 5.61453L29.0823 12.316l2.1132 2.878 9.1269-6.70148-2.1132-2.87799z"
-              fill="#0AD9C6" />
-            <path
-              d="M26.6674 3c-3.8639 0-7.0431 3.13028-7.0431 7.0431 0 3.864 3.1303 7.0432 7.0431 7.0432 3.8639 0 7.0431-3.1303 7.0431-7.0432C33.7105 6.17919 30.5313 3 26.6674 3zm0 10.2712c-1.8097 0-3.2281-1.4673-3.2281-3.2281 0-1.80966 1.4673-3.22807 3.2281-3.22807s3.2281 1.46732 3.2281 3.22807c0 1.7608-1.4673 3.2281-3.2281 3.2281zM43.6396 3c-3.864 0-7.0432 3.13028-7.0432 7.0431 0 3.864 3.1303 7.0432 7.0432 7.0432 3.8639 0 7.0431-3.1303 7.0431-7.0432C50.6338 6.17919 47.5035 3 43.6396 3zm0 10.2712c-1.8097 0-3.2281-1.4673-3.2281-3.2281 0-1.80966 1.4673-3.22807 3.2281-3.22807s3.2281 1.46732 3.2281 3.22807c0 1.7608-1.4673 3.2281-3.2281 3.2281zM67.5977.23865V20.2841h-3.3409V9.87956l-2.8159-2.67273-2.1-2.05227V20.2841H56V.23865h3.3409l3.9136 3.77045 1.0023.95455v-4.725h3.3409z"
-              fill="#0AD9C6" />
-            <path fill="#0AD9C6" d="M37 3h6v4h-6z" />
+        <a class="page-header__logo">
+          <svg width="68" height="21">
+            <use xlink:href="img/sprite_auto.svg#logo">
           </svg>
         </a>
         <button class="main-nav__menu-button" type="button"></button>
@@ -44,102 +36,90 @@
         </ul>
       </div>
     </nav>
-  </header>
-  <main class="page-main">
-    <section class="promo">
+    <div class="promo">
       <div class="wrapper">
         <div class="promo__wrapper">
           <div class="promo__left">
-            <a class="promo__left-logo" href="#">
-              <svg width="68" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.3636 0v20.0455h-3.2931V5.82273L8.97273 7.20682 6.825 9.975l-.09546.0955-.14318-.0955-2.14772-2.76818L3.34091 5.775v14.2705H0V0h3.34091l3.38863 4.29545L10.0705 0h3.2931zM8.30444 10.0704l-.09546-.09542.09546.09542z"
-                  fill="#0AD9C6" />
-                <path
-                  d="M8.44787 9.97498l-.09546.09542h-.04772l.14318-.09542zM38.2092 5.61453L29.0823 12.316l2.1132 2.878 9.1269-6.70148-2.1132-2.87799z"
-                  fill="#0AD9C6" />
-                <path
-                  d="M26.6674 3c-3.8639 0-7.0431 3.13028-7.0431 7.0431 0 3.864 3.1303 7.0432 7.0431 7.0432 3.8639 0 7.0431-3.1303 7.0431-7.0432C33.7105 6.17919 30.5313 3 26.6674 3zm0 10.2712c-1.8097 0-3.2281-1.4673-3.2281-3.2281 0-1.80966 1.4673-3.22807 3.2281-3.22807s3.2281 1.46732 3.2281 3.22807c0 1.7608-1.4673 3.2281-3.2281 3.2281zM43.6396 3c-3.864 0-7.0432 3.13028-7.0432 7.0431 0 3.864 3.1303 7.0432 7.0432 7.0432 3.8639 0 7.0431-3.1303 7.0431-7.0432C50.6338 6.17919 47.5035 3 43.6396 3zm0 10.2712c-1.8097 0-3.2281-1.4673-3.2281-3.2281 0-1.80966 1.4673-3.22807 3.2281-3.22807s3.2281 1.46732 3.2281 3.22807c0 1.7608-1.4673 3.2281-3.2281 3.2281zM67.5977.23865V20.2841h-3.3409V9.87956l-2.8159-2.67273-2.1-2.05227V20.2841H56V.23865h3.3409l3.9136 3.77045 1.0023.95455v-4.725h3.3409z"
-                  fill="#0AD9C6" />
-                <path fill="#0AD9C6" d="M37 3h6v4h-6z" />
-              </svg>
-            </a>
-            <h1 class="promo__left-header">Мы продаем велосипеды</h1>
-            <p class="promo__left-text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+            <h1>Мы продаем велосипеды</h1>
+            <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
           </div>
-
         </div>
       </div>
-    </section>
+    </div>
     <div class="form">
-      <p class="form__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-      <form class="form__form" action="https://echo.htmlacademy.ru" method="POST">
-        <p class="form__form-name">
-          <label for="form-name"></label>
-          <input id="form-name" type="text" placeholder="Введите Ваше Имя" required>
-        </p>
-        <p class="form__form-tel">
-          <label for="form-tel"></label>
-          <input id="form-tel" type="tel" placeholder="Введите Ваш номер телефона" required>
-        </p>
-        <button class="form__form-button" type="submit">Подобрать велосипед мечты</button>
+      <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <label for="form-name">
+          <input id="form-name" type="text" placeholder="Введите Ваше Имя" maxlength="20"
+            title="Разрешено использовать только буквы" pattern="^[A-Za-zА-Яа-яЁё\s]" required>
+        </label>
+        <label for="form-tel">
+          <input id="form-tel" type="tel" placeholder="Введите Ваш номер телефона" maxlength="15"
+            title="Используйте числовой формат" pattern="^[0-9]+$" required>
+        </label>
+        <button class="form__button" type="submit">Подобрать велосипед мечты</button>
       </form>
     </div>
+  </header>
+  <main class="page-main">
     <section class="about" id="about">
       <div class="wrapper">
-        <h2 class="about__header">Несколько фактов о нас</h2>
-        <ul class="about__list">
+        <h2>Несколько фактов о нас</h2>
+        <ol class="about__list">
           <li class="about__list-item">
-            <span>01</span>
             <p>Самый широкий выбор велосипедов!</p>
           </li>
           <li class="about__list-item">
-            <span>02</span>
             <p>Доставка велосипедов по всей России!</p>
           </li>
           <li class="about__list-item">
-            <span>03</span>
             <p>Большой выбор крутых аксессуаров!</p>
           </li>
           <li class="about__list-item">
-            <span>04</span>
             <p>Профессиональные консультации!</p>
           </li>
-        </ul>
+        </ol>
       </div>
     </section>
     <section class="types" id="types">
-      <div class="wrapper">
-        <h2 class="types__header">Виды велосипедов</h2>
+      <div class="types__wrapper">
+        <h2>Виды велосипедов</h2>
         <ul class="types__list">
           <li class="types__list-item types__list-item--road">
             <picture>
-              <source media="(min-width: 768px) and (max-width: 1023px)"
-                srcset="img/road-tablet.jpg 1x, img/road-tablet@2x.jpg 2x">
-              <source media="(min-width: 320px) and (max-width: 767px)"
-                srcset="img/road-mobile.jpg 1x, img/road-mobile@2x.jpg 2x">
-              <img src="img/road.jpg" srcset="img/road@2x.jpg" alt="Дорожный велосипед" width="342" height="503">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/road.webp 1x, img/road@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="img/road-tablet.webp 1x, img/road-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)"
+                srcset="img/road-mobile.webp 1x, img/road-mobile@2x.webp 2x">
             </picture>
+            <!-- 1x: 1024px; 2x: 2048px -->
+            <img src="img/road.jpg" srcset="img/road@2x.jpg" alt="Дорожный велосипед" width="342" height="503">
             <p>Дорожный велосипед</p>
           </li>
           <li class="types__list-item types__list-item--mountain">
             <picture>
-              <source media="(min-width: 768px) and (max-width: 1023px)"
-                srcset="img/mountain-tablet.jpg 1x, img/mountain-tablet@2x.jpg 2x">
-              <source media="(min-width: 320px) and (max-width: 767px)"
-                srcset="img/mountain-mobile.jpg 1x, img/mountain-mobile@2x.jpg 2x">
-              <img src="img/mountain.jpg" srcset="img/mountain@2x.jpg" alt="Горный велосипед" width="342" height="566">
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/mountain.webp 1x, img/mountain@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="img/mountain-tablet.webp 1x, img/mountain-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)"
+                srcset="img/mountain-mobile.webp 1x, img/mountain-mobile@2x.webp 2x">
             </picture>
+            <!-- 1x: 1024px; 2x: 2048px -->
+            <img src="img/mountain.jpg" srcset="img/mountain@2x.jpg" alt="Горный велосипед" width="342" height="566">
             <p>Горный велосипед</p>
           </li>
           <li class="types__list-item types__list-item--childe">
             <picture>
-              <source media="(min-width: 768px) and (max-width: 1023px)"
-                srcset="img/childe-tablet.jpg 1x, img/childe-tablet@2x.jpg 2x">
-              <source media="(min-width: 320px) and (max-width: 767px)"
-                srcset="img/childe-mobile.jpg 1x, img/childe-mobile@2x.jpg 2x">
-              <img src="img/childe.jpg" srcset="img/childe@2x.jpg" alt="Детский велосипед" width="342" height="512">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/childe.webp 1x, img/childe@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="img/childe-tablet.webp 1x, img/childe-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width7: 320px) and (max-width: 767px)"
+                srcset="img/childe-mobile.webp 1x, img/childe-mobile@2x.webp 2x">
             </picture>
+            <!-- 1x: 1024px; 2x: 2048px -->
+            <img src="img/childe.jpg" srcset="img/childe@2x.jpg 2x" alt="Детский велосипед" width="342" height="512">
             <p>Детский велосипед</p>
           </li>
         </ul>
@@ -147,38 +127,27 @@
     </section>
     <section class="video" id="video">
       <div class="video__wrapper">
-        <h2 class="video__header">Видео про велосипеды</h2>
-        <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video__player">
           <button class="video__button" type="button"></button>
-          <picture>
-            <source media="(min-width: 768px) and (max-width: 1023px)"
-              srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <source media="(min-width: 320px) and (max-width: 767px)"
-              srcset="img/video-mobile.jpg 1x, img/video-mobile@2x.jpg 2x">
-            <img src="img/video.jpg" srcset="img/video.jpg" alt="Видео про велосипеды">
-          </picture>
         </div>
       </div>
     </section>
     <section class="map" id="map">
       <div class="map__wrapper">
-        <h2 class="map__header">Как нас найти?</h2>
-        <p class="map__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+        <h2>Как нас найти?</h2>
+        <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
         <picture>
           <source type="image/webp" media="(min-width: 1024px)" srcset="img/map.webp 1x, img/map@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)"
             srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
           <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)"
             srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
-          <source media="(min-width: 768px) and (max-width: 1023px)"
-            srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <source media="(min-width: 320px) and (max-width: 767px)"
-            srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x">
-          <img src="img/map.jpg" srcset="img/map@2x.jpg"
-            alt="Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
         </picture>
-
+        <!-- 1x: 1024px; 2x: 2048px -->
+        <img src="img/map.jpg" srcset="img/map@2x.jpg"
+          alt="Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
       </div>
     </section>
   </main>

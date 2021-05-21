@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Велосипеды</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__wrapper">
+        <a class="page-header__logo">
+          <svg width="68" height="21">
+            <use xlink:href="img/sprite_auto.svg#logo">
+          </use></svg>
+        </a>
+        <button class="main-nav__menu-button" type="button"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="#about">О нас</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#types">Виды велосипедов</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#video">Видео про велосипеды</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#map">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="promo">
+      <div class="wrapper">
+        <div class="promo__wrapper">
+          <div class="promo__left">
+            <h1>Мы продаем велосипеды</h1>
+            <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <label for="form-name">
+          <input id="form-name" type="text" placeholder="Введите Ваше Имя" maxlength="20" title="Разрешено использовать только буквы" pattern="^[A-Za-zА-Яа-яЁё\s]" required="">
+        </label>
+        <label for="form-tel">
+          <input id="form-tel" type="tel" placeholder="Введите Ваш номер телефона" maxlength="15" title="Используйте числовой формат" pattern="^[0-9]+$" required="">
+        </label>
+        <button class="form__button" type="submit">Подобрать велосипед мечты</button>
+      </form>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="about" id="about">
+      <div class="wrapper">
+        <h2>Несколько фактов о нас</h2>
+        <ol class="about__list">
+          <li class="about__list-item">
+            <p>Самый широкий выбор велосипедов!</p>
+          </li>
+          <li class="about__list-item">
+            <p>Доставка велосипедов по всей России!</p>
+          </li>
+          <li class="about__list-item">
+            <p>Большой выбор крутых аксессуаров!</p>
+          </li>
+          <li class="about__list-item">
+            <p>Профессиональные консультации!</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="types" id="types">
+      <div class="types__wrapper">
+        <h2>Виды велосипедов</h2>
+        <ul class="types__list">
+          <li class="types__list-item types__list-item--road">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/road.webp 1x, img/road@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/road-tablet.webp 1x, img/road-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/road-mobile.webp 1x, img/road-mobile@2x.webp 2x">
+              <!-- <source media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="img/road-tablet.jpg 1x, img/road-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px) and (max-width: 767px)"
+                srcset="img/road-mobile.jpg 1x, img/road-mobile@2x.jpg 2x"> -->
+            </picture>
+
+            <!-- 1x: 1024px; 2x: 2048px -->
+            <img src="img/road.jpg" srcset="img/road@2x.jpg" alt="Дорожный велосипед" width="342" height="503">
+            <p>Дорожный велосипед</p>
+          </li>
+          <li class="types__list-item types__list-item--mountain">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/mountain.webp 1x, img/mountain@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/mountain-tablet.webp 1x, img/mountain-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/mountain-mobile.webp 1x, img/mountain-mobile@2x.webp 2x">
+              <!-- <source media="(min-width: 768px) and (max-width: 1023px)"
+                srcset="img/mountain-tablet.jpg 1x, img/mountain-tablet@2x.jpg 2x">
+              <source media="(min-width: 320px) and (max-width: 767px)"
+                srcset="img/mountain-mobile.jpg 1x, img/mountain-mobile@2x.jpg 2x"> -->
+            </picture>
+
+            <!-- 1x: 1024px; 2x: 2048px -->
+            <img src="img/mountain.jpg" srcset="img/mountain@2x.jpg" alt="Горный велосипед" width="342" height="566">
+            <p>Горный велосипед</p>
+          </li>
+          <li class="types__list-item types__list-item--childe">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/childe.webp 1x, img/childe@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/childe-tablet.webp 1x, img/childe-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width7: 320px) and (max-width: 767px)" srcset="img/childe-mobile.webp 1x, img/childe-mobile@2x.webp 2x">
+              <!-- <source media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="img/childe-tablet.jpg 1x, img/childe-tablet@2x.jpg 2x">
+            <source media="(min-width: 320px) and (max-width: 767px)"
+              srcset="img/childe-mobile.jpg 1x, img/childe-mobile@2x.jpg 2x"> -->
+            </picture>
+
+            <!-- 1x: 1024px; 2x: 2048px -->
+            <img src="img/childe.jpg" srcset="img/childe@2x.jpg 2x" alt="Детский велосипед" width="342" height="512">
+            <p>Детский велосипед</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="video" id="video">
+      <div class="video__wrapper">
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <div class="video__player">
+          <button class="video__button" type="button"></button>
+        </div>
+      </div>
+    </section>
+    <section class="map" id="map">
+      <div class="map__wrapper">
+        <h2>Как нас найти?</h2>
+        <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+        <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+          <!-- <source media="(min-width: 768px) and (max-width: 1023px)"
+            srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <source media="(min-width: 320px) and (max-width: 767px)"
+            srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x"> -->
+        </picture>
+
+        <!-- 1x: 1024px; 2x: 2048px -->
+        <img src="img/map.jpg" srcset="img/map@2x.jpg" alt="Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="wrapper">
+      <ul class="page-footer__list">
+        <li class="page-footer__list-item page-footer__list-item--mail">
+          <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+        </li>
+        <li class="page-footer__list-item page-footer__list-item--tel">
+          <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,21 +1,27 @@
 .video {
-  background-color: #131314;
-  min-height: 706px;
-  margin-bottom: 246px;
+  background: url("/img/video.jpg"), linear-gradient(#131314 74%, #ffffff 26%);
+  background-position: 52% 66%, 50% 50%;
+  background-repeat: no-repeat;
+  min-height: 960px;
   text-align: center;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
-    min-height: 413px;
-    margin-bottom: 155px;
+    min-height: 560px;
+    background: url("/img/video-tablet.jpg"), linear-gradient(#131314 74%, #ffffff 24%);
+    background-repeat: no-repeat;
+    background-position: 54% 78%, 50% 50%;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
-    min-height: 384px;
-    margin-bottom: 120px;
+    min-height: 503px;
+    background: url("/img/video-mobile.jpg"), linear-gradient(#131314 76%, #ffffff 24%);
+    background-repeat: no-repeat;
+    background-position: 92% 79%, 50% 50%;
   }
 }
 
-.video__header {
+.video h2 {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 600;
@@ -26,7 +32,8 @@
   text-align: center;
   margin: 0;
   margin-bottom: 20px;
-  padding-top: 118px;
+  padding-top: 125px;
+  padding-left: 18px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     font-size: 24px;
@@ -36,10 +43,11 @@
   @media (min-width: $mobile-width) and (max-width: 767px) {
     font-size: 24px;
     padding-top: 85px;
+    padding-left: 0;
   }
 }
 
-.video__text {
+.video p {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 300;
@@ -51,13 +59,15 @@
   opacity: 0.7;
   width: 340px;
   margin: 0 auto;
+  padding-left: 18px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
-    width: 430px;
+    width: 450px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     width: 288px;
+    padding-left: 0;
   }
 }
 
@@ -90,11 +100,11 @@
 }
 
 .video__button {
-  position: absolute;
-  content: "";
-  top: 283px;
-  left: 50%;
-  transform: translateX(-50%);
+  // position: absolute;
+  // content: "";
+  // top: 283px;
+  // left: 50%;
+  // transform: translateX(-50%);
   background-image: url("/img/play-btn.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -104,6 +114,8 @@
   border-radius: 50%;
   cursor: pointer;
   z-index: 2;
+  margin: 0 auto;
+  margin-top: 283px;
 
   &:hover {
     opacity: 0.5;
@@ -114,10 +126,10 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
-    top: 150px;
+    margin-top: 150px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
-    top: 100px;
+    margin-top: 100px;
   }
 }
