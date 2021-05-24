@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     margin-bottom: 0;
+    min-height: 427px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
@@ -42,18 +43,24 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style-type: none;
   counter-reset: num;
-  margin: 0;
+  width: 1140px;
+  grid-gap: 36px;
+  margin: 0 auto;
   padding: 0;
   padding-top: 30px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     grid-template-columns: 1fr 1fr;
-    padding-left: 94px;
+    row-gap: 75px;
+    column-gap: 35px;
+    width: 540px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     grid-template-columns: 1fr;
-    padding-left: 20px;
+    padding-left: 24px;
+    width: 288px;
+    grid-gap: 72px
   }
 }
 
@@ -62,16 +69,11 @@
   width: 263px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
-    margin-bottom: 79px;
     width: 260px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
-    margin-bottom: 70px;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -97,7 +99,7 @@
 .about__list-item p {
   padding: 0;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 22px;
   font-family: $main-font-family;
   font-style: normal;
   font-weight: normal;
@@ -110,6 +112,6 @@
   @media (min-width: $mobile-width) and (max-width: 767px) {
     font-size: 18px;
     line-height: 34px;
-    margin-top: 20px;
+    margin-top: 19px;
   }
 }

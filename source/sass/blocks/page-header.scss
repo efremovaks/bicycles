@@ -1,8 +1,16 @@
 .page-header {
-  background-color: #1f1f1f;
   position: relative;
   width: 100%;
   z-index: 2;
+  margin-bottom: 152px;
+
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    margin-bottom: 72px;
+  }
 }
 
 .page-header__logo {

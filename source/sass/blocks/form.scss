@@ -6,23 +6,24 @@
   left: 58%;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
-    top: 410px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    margin: 0 auto;
+    padding-left: 15px;
+    width: 350px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     width: 288px;
-    top: 460px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    margin: 0 auto;
+    padding-left: 8px;
   }
 }
 
 .form p {
   font-family: $main-font-family;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 17px;
   line-height: 28px;
   letter-spacing: -0.005em;
@@ -33,12 +34,14 @@
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     color: #000000;
     font-size: 18px;
+    font-weight: 600;
     margin-bottom: 30px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     color: #000000;
     font-size: 18px;
+    font-weight: 600;
     width: 288px;
     margin: 0 auto;
     margin-bottom: 20px;

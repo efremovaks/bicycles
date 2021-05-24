@@ -1,23 +1,17 @@
 .video {
-  background: url("/img/video.jpg"), linear-gradient(#131314 74%, #ffffff 26%);
-  background-position: 52% 66%, 50% 50%;
+  background:linear-gradient(#131314 74%, #ffffff 26%);
+  background-position:50% 50%;
   background-repeat: no-repeat;
   min-height: 960px;
   text-align: center;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     min-height: 560px;
-    background: url("/img/video-tablet.jpg"), linear-gradient(#131314 74%, #ffffff 24%);
-    background-repeat: no-repeat;
-    background-position: 54% 78%, 50% 50%;
     margin-bottom: 9px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     min-height: 503px;
-    background: url("/img/video-mobile.jpg"), linear-gradient(#131314 76%, #ffffff 24%);
-    background-repeat: no-repeat;
-    background-position: 92% 79%, 50% 50%;
   }
 }
 
@@ -77,34 +71,36 @@
 
 .video__player img {
   display: block;
-  position: absolute;
-  content: "";
-  top: 55px;
-  left: 50%;
-  transform: translateX(-50%);
+  // position: absolute;
+  // content: "";
+  // top: 55px;
+  // left: 50%;
+  // transform: translateX(-50%);
   width: 929px;
   height: 522px;
-  z-index: 1;
+  margin-top: 56px;
+  padding-left: 24px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     width: 503px;
     height: 282px;
-    top: 35px;
+    margin-top: 40px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     width: 288px;
     height: 161px;
-    top: 55px;
+    margin-top: 52px;
+    padding-left: 15px;
   }
 }
 
 .video__button {
-  // position: absolute;
-  // content: "";
-  // top: 283px;
-  // left: 50%;
-  // transform: translateX(-50%);
+  position: absolute;
+  content: "";
+  top: 227px;
+  left: 51%;
+  transform: translateX(-56%);
   background-image: url("/img/play-btn.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -113,9 +109,7 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 2;
   margin: 0 auto;
-  margin-top: 283px;
 
   &:hover {
     opacity: 0.5;
@@ -126,10 +120,15 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
-    margin-top: 150px;
+    width: 90px;
+    height: 90px;
+    background-color: #0AD9C6;
+    top: 96px;
+    left: 52%;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
-    margin-top: 100px;
+    top: 43px;
+    left: 54%;
   }
 }

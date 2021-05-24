@@ -61,7 +61,7 @@
   </header>
   <main class="page-main">
     <section class="about" id="about">
-      <div class="wrapper">
+      <div class="about__wrapper">
         <h2>Несколько фактов о нас</h2>
         <ol class="about__list">
           <li class="about__list-item">
@@ -85,47 +85,25 @@
         <ul class="types__list">
           <li class="types__list-item types__list-item--road">
             <picture>
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/road.webp 1x, img/road@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/road-tablet.webp 1x, img/road-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/road-mobile.webp 1x, img/road-mobile@2x.webp 2x">
-              <!-- <source media="(min-width: 768px) and (max-width: 1023px)"
-                srcset="img/road-tablet.jpg 1x, img/road-tablet@2x.jpg 2x">
-              <source media="(min-width: 320px) and (max-width: 767px)"
-                srcset="img/road-mobile.jpg 1x, img/road-mobile@2x.jpg 2x"> -->
+              <source type="image/webp" srcset="img/road.webp 1x, img/road@2x.webp 2x">
+              <img src="img/road.jpg" srcset="img/road@2x.jpg" alt="Дорожный велосипед" width="342" height="503">
             </picture>
-
-            <!-- 1x: 1024px; 2x: 2048px -->
-            <img src="img/road.jpg" srcset="img/road@2x.jpg" alt="Дорожный велосипед" width="342" height="503">
             <p>Дорожный велосипед</p>
           </li>
           <li class="types__list-item types__list-item--mountain">
             <picture>
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/mountain.webp 1x, img/mountain@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/mountain-tablet.webp 1x, img/mountain-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/mountain-mobile.webp 1x, img/mountain-mobile@2x.webp 2x">
-              <!-- <source media="(min-width: 768px) and (max-width: 1023px)"
-                srcset="img/mountain-tablet.jpg 1x, img/mountain-tablet@2x.jpg 2x">
-              <source media="(min-width: 320px) and (max-width: 767px)"
-                srcset="img/mountain-mobile.jpg 1x, img/mountain-mobile@2x.jpg 2x"> -->
+              <source type="image/webp" srcset="img/mountain.webp 1x, img/mountain@2x.webp 2x">
+              <!-- 1x: 1024px; 2x: 2048px -->
+              <img src="img/mountain.jpg" srcset="img/mountain@2x.jpg" alt="Горный велосипед" width="342" height="566">
             </picture>
-
-            <!-- 1x: 1024px; 2x: 2048px -->
-            <img src="img/mountain.jpg" srcset="img/mountain@2x.jpg" alt="Горный велосипед" width="342" height="566">
             <p>Горный велосипед</p>
           </li>
           <li class="types__list-item types__list-item--childe">
             <picture>
-              <source type="image/webp" media="(min-width: 1024px)" srcset="img/childe.webp 1x, img/childe@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/childe-tablet.webp 1x, img/childe-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width7: 320px) and (max-width: 767px)" srcset="img/childe-mobile.webp 1x, img/childe-mobile@2x.webp 2x">
-              <!-- <source media="(min-width: 768px) and (max-width: 1023px)"
-              srcset="img/childe-tablet.jpg 1x, img/childe-tablet@2x.jpg 2x">
-            <source media="(min-width: 320px) and (max-width: 767px)"
-              srcset="img/childe-mobile.jpg 1x, img/childe-mobile@2x.jpg 2x"> -->
+              <source type="image/webp" srcset="img/childe.webp 1x, img/childe@2x.webp 2x">
+              <!-- 1x: 1024px; 2x: 2048px -->
+              <img src="img/childe.jpg" srcset="img/childe@2x.jpg 2x" alt="Детский велосипед" width="342" height="512">
             </picture>
-
-            <!-- 1x: 1024px; 2x: 2048px -->
-            <img src="img/childe.jpg" srcset="img/childe@2x.jpg 2x" alt="Детский велосипед" width="342" height="512">
             <p>Детский велосипед</p>
           </li>
         </ul>
@@ -137,6 +115,10 @@
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video__player">
           <button class="video__button" type="button"></button>
+          <picture>
+            <source srcset="img/video.jpg 1x, img/video@2x.jpg 2x">
+            <img src="img/video.jpg" srcset="img/video.jpg" alt="Видео про велосипеды">
+          </picture>
         </div>
       </div>
     </section>
@@ -145,17 +127,10 @@
         <h2>Как нас найти?</h2>
         <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
         <picture>
-          <source type="image/webp" media="(min-width: 1024px)" srcset="img/map.webp 1x, img/map@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px) and (max-width: 1023px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 320px) and (max-width: 767px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
-          <!-- <source media="(min-width: 768px) and (max-width: 1023px)"
-            srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <source media="(min-width: 320px) and (max-width: 767px)"
-            srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x"> -->
+          <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
+          <!-- 1x: 1024px; 2x: 2048px -->
+          <img src="img/map.jpg" srcset="img/map@2x.jpg" alt="Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
         </picture>
-
-        <!-- 1x: 1024px; 2x: 2048px -->
-        <img src="img/map.jpg" srcset="img/map@2x.jpg" alt="Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
       </div>
     </section>
   </main>

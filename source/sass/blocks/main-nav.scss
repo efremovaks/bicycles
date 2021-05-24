@@ -15,7 +15,7 @@
   overflow: hidden;
   margin: 0 auto;
   min-height: 29px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #484848;
   width: 1024px;
 
@@ -40,6 +40,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 874px;
+  padding-left: 10px;
 
   @media (min-width: $mobile-width) and (max-width: 1023px) {
     display: block;
@@ -48,6 +49,7 @@
     background-color: #ffffff;
     padding-top: 70px;
     overflow: auto;
+    padding-left: 0;
   }
 }
 
@@ -210,6 +212,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+// .main-nav--nojs {
+//   position: static;
+// }
+
 .main-nav--nojs .main-nav__menu-button {
   display: none;
 }
@@ -217,4 +223,8 @@
 .main-nav--nojs .main-nav__wrapper {
   position: static;
   min-height: 0;
+}
+
+.main-nav--nojs .main-nav__list {
+  min-height: 568px;
 }
