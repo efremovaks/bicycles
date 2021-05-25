@@ -5,34 +5,35 @@
   transform: translateX(-50%);
   width: 100%;
   z-index: 2;
+  min-height: 50px;
 }
 
-.main-nav__wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1004px;
-  overflow: hidden;
-  margin: 0 auto;
-  min-height: 29px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #484848;
-  width: 1024px;
+// .main-nav__wrapper {
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   max-width: 1004px;
+//   overflow: hidden;
+//   margin: 0 auto;
+//   min-height: 29px;
+//   padding-bottom: 10px;
+//   border-bottom: 1px solid #484848;
+//   width: 1024px;
 
-  @media (min-width: $mobile-width) and (max-width: 767px) {
-    width: 100%;
-  }
+//   @media (min-width: $mobile-width) and (max-width: 767px) {
+//     width: 100%;
+//   }
 
-  @media (min-width: $tablet-width) and (max-width: 1023px) {
-    width: 100%;
-  }
+//   @media (min-width: $tablet-width) and (max-width: 1023px) {
+//     width: 100%;
+//   }
 
-  @media (min-width: $mobile-width) and (max-width: 1023px) {
-    justify-content: space-between;
-    padding-bottom: 0;
-    border-bottom: none;
-  }
-}
+//   @media (min-width: $mobile-width) and (max-width: 1023px) {
+//     justify-content: space-between;
+//     padding-bottom: 0;
+//     border-bottom: none;
+//   }
+// }
 
 .main-nav__list {
   display: flex;
@@ -40,6 +41,8 @@
   justify-content: center;
   width: 874px;
   padding-left: 10px;
+  border-bottom: 1px solid #4b4b4b;
+  padding-bottom: 10px;
 
   @media (min-width: $mobile-width) and (max-width: 1023px) {
     display: block;
@@ -49,6 +52,7 @@
     padding-top: 70px;
     overflow: auto;
     padding-left: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -208,6 +212,7 @@
     display: block;
     position: absolute;
     top: 0;
+    border: 0;
   }
 
   .main-nav--nojs {
@@ -221,6 +226,7 @@
   left: 0;
   top: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 0;
 }
 
 
@@ -235,4 +241,8 @@
 
 .main-nav--nojs .main-nav__list {
   min-height: 62px;
+}
+
+.main-nav--nojs .promo__logo {
+  display: none;
 }

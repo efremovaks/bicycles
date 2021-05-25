@@ -1,26 +1,30 @@
 .page-header {
   position: relative;
-  width: 100%;
   z-index: 2;
-  margin-bottom: 152px;
+  width: 100%;
+  background-color: #1f1f1f;
+  background-image: url("../img/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  margin-bottom: 151px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
+    background: none;
     margin-bottom: 70px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
+    background: none;
     margin-bottom: 72px;
   }
 }
 
-.page-header__logo {
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 318px;
-    left: 19%;
-    margin-left: 10px;
-  }
+.page-header__wrapper {
+  width: 100%;
+  max-width: 883px;
+  margin: 0 auto;
 
-  display: block;
-  margin-left: 15px;
+  @media (min-width: $tablet-width) and (max-width: 1023px) {
+    max-width: 100%;
+  }
 }
