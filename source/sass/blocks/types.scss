@@ -159,7 +159,7 @@
     left: -33px;
   }
 
-  @media (min-width: $mobile-width) and (max-width: 767px) {
+  @media (max-width: 767px) {
     width: 127px;
     height: 127px;
     background-image: url("/img/type-big-ring-tablet.png");
@@ -175,7 +175,7 @@
     padding-top: 0;
   }
 
-  @media (min-width: $mobile-width) and (max-width: 767px) {
+  @media (max-width: 767px) {
     padding-top: 19px;
   }
 
@@ -193,7 +193,7 @@
       background-image: none;
     }
 
-    @media (min-width: $mobile-width) and (max-width: 767px) {
+    @media (max-width: 767px) {
       background-image: none;
     }
   }
@@ -224,7 +224,7 @@
     margin-top: 0;
   }
 
-  @media (min-width: $mobile-width) and (max-width: 767px) {
+  @media (max-width: 767px) {
     padding-top: 17px;
   }
 
@@ -251,7 +251,7 @@
       right: -38px;
     }
 
-    @media (min-width: $mobile-width) and (max-width: 767px) {
+    @media (max-width: 767px) {
       background-image: url("/img/type-min-ring-tablet.png");
       width: 68px;
       height: 68px;

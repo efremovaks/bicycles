@@ -16,7 +16,7 @@
     margin-bottom: 70px;
   }
 
-  @media (min-width: $mobile-width) and (max-width: 767px) {
+  @media (max-width: 767px) {
     background: none;
     min-height: 340px;
     padding-top: 0;
@@ -39,7 +39,7 @@
     margin-bottom: 71px;
   }
 
-  @media (min-width: $mobile-width) and (max-width: 767px) {
+  @media (max-width: 767px) {
     max-width: 100%;
     background-color: #1f1f1f;
     background-image: url("/img/main-bg-mobile.jpg");
@@ -63,7 +63,7 @@
     text-align: center;
   }
 
-  @media (min-width: $mobile-width) and (max-width: 767px) {
+  @media (max-width: 767px) {
     padding-top: 120px;
     padding-left: 0;
     padding-bottom: 70px;
@@ -90,7 +90,7 @@
     margin-bottom: 19px;
   }
 
-  @media (min-width: $mobile-width) and (max-width: 767px) {
+  @media (max-width: 767px) {
     font-size: 30px;
     line-height: 42px;
     width: 288px;
@@ -116,7 +116,7 @@
     margin: 0 auto;
   }
 
-  @media (min-width: $mobile-width) and (max-width: 767px) {
+  @media (max-width: 767px) {
     font-size: 18px;
     width: 288px;
     margin: 0 auto;
