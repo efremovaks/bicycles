@@ -17,10 +17,10 @@
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.025em;
   color: $main-text-color;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding-left: 18px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
@@ -31,6 +31,7 @@
   @media (min-width: $mobile-width) and (max-width: 767px) {
     font-size: 18px;
     margin-bottom: 20px;
+    padding-left: 0;
   }
 }
 
@@ -53,8 +54,9 @@
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
-    width: 288px;
+    width: 260px;
     padding-bottom: 18px;
+    padding-left: 0;
   }
 }
 

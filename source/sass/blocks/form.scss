@@ -16,7 +16,6 @@
     width: 288px;
     position: static;
     margin: 0 auto;
-    padding-left: 8px;
   }
 }
 
@@ -26,15 +25,15 @@
   font-weight: 500;
   font-size: 17px;
   line-height: 28px;
-  letter-spacing: -0.005em;
+  letter-spacing: 0.02em;
   color: $text-on-dark;
   margin: 0;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     color: #000000;
-    font-size: 18px;
     font-weight: 600;
+    letter-spacing: -0.005em;
     margin-bottom: 30px;
   }
 
@@ -42,6 +41,7 @@
     color: #000000;
     font-size: 18px;
     font-weight: 600;
+    letter-spacing: -0.025em;
     width: 288px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -58,7 +58,7 @@
   cursor: pointer;
   outline: none;
   margin-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 18px;
 
   &::placeholder {
     font-family: $main-font-family;
@@ -82,10 +82,12 @@
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     width: 321px;
+    padding-left: 11px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     width: 288px;
+    padding-left: 16px;
   }
 }
 
@@ -99,6 +101,7 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 21px;
+  letter-spacing: -0.35px;
   text-align: center;
   color: #000000;
   cursor: pointer;
