@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="We sell bicycles">
   <title>Велосипеды</title>
   <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -14,13 +15,13 @@
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="page-header__wrapper">
-        <a class="main-nav__logo">
+        <a class="main-nav__logo" href="#">
           <svg width="68" height="21">
             <use xlink:href="img/sprite_auto.svg#logo" />
           </svg>
         </a>
         <div class="main-nav__wrapper">
-          <button class="main-nav__menu-button" type="button"></button>
+          <button class="main-nav__menu-button" type="button" aria-label="close"></button>
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
               <a href="#about">О нас</a>
@@ -52,7 +53,7 @@
         <form action="https://echo.htmlacademy.ru" method="POST">
           <label for="form-name">
             <input id="form-name" type="text" placeholder="Введите Ваше Имя" maxlength="20"
-              title="Разрешено использовать только буквы" pattern="^[A-Za-zА-Яа-яЁё\s]" required>
+              title="Разрешено использовать только буквы" pattern="^[А-Яа-яЁё\s]+$" required>
           </label>
           <label for="form-tel">
             <input id="form-tel" type="tel" placeholder="Введите Ваш номер телефона" maxlength="15"
@@ -116,7 +117,7 @@
         <h2>Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video__player">
-          <button class="video__button" type="button"></button>
+          <button class="video__play-button" type="button" aria-label="play"></button>
           <picture>
             <source type="image/webp" srcset="img/video.jpg 1x, img/video@2x.jpg 2x">
             <!-- 1x: 1024px; 2x: 2048px -->
@@ -142,10 +143,15 @@
     <div class="wrapper">
       <ul class="page-footer__list">
         <li class="page-footer__list-item page-footer__list-item--mail">
-          <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+          <a href="mailto:puteshestviemechta@gmail.ru">
+            <img src="img/mail.png" alt="mail" width="26" height="20">
+            puteshestviemechta@gmail.ru
+          </a>
         </li>
         <li class="page-footer__list-item page-footer__list-item--tel">
-          <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+          <a href="tel:+749978468446">
+            <img src="img/phone.png" alt="mail" width="26" height="20">
+            +7 (499) -784-684-46</a>
         </li>
       </ul>
     </div>

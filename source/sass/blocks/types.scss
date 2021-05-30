@@ -42,6 +42,7 @@
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     font-size: 24px;
     padding-top: 55px;
+    padding-left: 0;
     margin-bottom: 35px;
   }
 
@@ -84,10 +85,11 @@
 .types__list-item {
   position: relative;
   z-index: 1;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     width: 262px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 
     &:first-child {
       margin-right: 10px;
@@ -112,10 +114,6 @@
   color: #000000;
   margin: 0;
   margin-top: 20px;
-
-  @media (min-width: $tablet-width) and (max-width: 1023px) {
-    padding-left: 15px;
-  }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
     margin-top: 18px;
@@ -142,7 +140,7 @@
   width: 180px;
   height: 180px;
   z-index: -1;
-  background-image: url("/img/type-big-ring.png");
+  background-image: url("../img/type-big-ring.png");
   background-repeat: no-repeat;
   top: 157px;
   left: -58px;
@@ -154,15 +152,15 @@
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     width: 127px;
     height: 127px;
-    background-image: url("/img/type-big-ring-tablet.png");
+    background-image: url("../img/type-big-ring-tablet.png");
     top: 202px;
-    left: -33px;
+    left: -41px;
   }
 
   @media (max-width: 767px) {
     width: 127px;
     height: 127px;
-    background-image: url("/img/type-big-ring-tablet.png");
+    background-image: url("../img/type-big-ring-tablet.png");
     top: 198px;
     left: -15px;
   }
@@ -186,7 +184,7 @@
     width: 47px;
     height: 47px;
     z-index: 2;
-    background-image: url("/img/type-square.png");
+    background-image: url("../img/type-square.png");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) and (max-width: 1023px) {
@@ -208,7 +206,7 @@
   }
 
   &::after {
-    bottom: 31px;
+    bottom: 62px;
     right: -23px;
 
     @media (min-width: 1024px) and (max-width: 1439px) {
@@ -236,7 +234,7 @@
     z-index: 2;
     top: -30px;
     right: -35px;
-    background-image: url("/img/type-min-ring.png");
+    background-image: url("../img/type-min-ring.png");
     background-repeat: no-repeat;
 
     @media (min-width: 1024px) and (max-width: 1439px) {
@@ -244,15 +242,15 @@
     }
 
     @media (min-width: $tablet-width) and (max-width: 1023px) {
-      background-image: url("/img/type-min-ring-tablet.png");
+      background-image: url("../img/type-min-ring-tablet.png");
       width: 68px;
       height: 68px;
       top: -21px;
-      right: -38px;
+      right: -28px;
     }
 
     @media (max-width: 767px) {
-      background-image: url("/img/type-min-ring-tablet.png");
+      background-image: url("../img/type-min-ring-tablet.png");
       width: 68px;
       height: 68px;
       top: -3px;

@@ -34,6 +34,7 @@
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     font-size: 24px;
     padding-top: 70px;
+    padding-left: 0;
   }
 
   @media (max-width: 767px) {
@@ -59,6 +60,7 @@
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     width: 450px;
+    padding-left: 0;
   }
 
   @media (max-width: 767px) {
@@ -93,13 +95,13 @@
   }
 }
 
-.video__button {
+.video__play-button {
   position: absolute;
   content: "";
   top: 227px;
   left: 51%;
   transform: translateX(-56%);
-  background-image: url("/img/play-btn.png");
+  background-image: url("../img/play-btn.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 65px;
@@ -122,7 +124,6 @@
     height: 90px;
     background-color: #0ad9c6;
     top: 97px;
-    left: 52%;
   }
 
   @media (max-width: 767px) {

@@ -8,7 +8,6 @@
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     position: static;
     margin: 0 auto;
-    padding-left: 15px;
     width: 350px;
   }
 
@@ -35,6 +34,8 @@
     font-weight: 600;
     letter-spacing: -0.005em;
     margin-bottom: 30px;
+    width: 336px;
+    padding-left: 14px;
   }
 
   @media (max-width: 767px) {
@@ -58,7 +59,9 @@
   cursor: pointer;
   outline: none;
   margin-bottom: 20px;
-  padding-left: 18px;
+  padding-left: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   &::placeholder {
     font-family: $main-font-family;
@@ -69,7 +72,6 @@
     color: #1c1c1c;
     opacity: 0.5;
     padding-top: 14px;
-    padding-left: 10px;
   }
 
   &:hover {
@@ -82,13 +84,18 @@
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     width: 321px;
-    padding-left: 11px;
   }
 
   @media (max-width: 767px) {
     width: 288px;
-    padding-left: 16px;
   }
+}
+
+.form input::-webkit-input-placeholder {
+  color: #1c1c1c;
+  opacity: 0.5;
+  padding-top: 14px;
+  padding-bottom: 10px;
 }
 
 .form__button {

@@ -2,7 +2,7 @@
   position: relative;
   min-height: 825px;
   background-color: #1f1f1f;
-  background-image: url("/img/main-bg.jpg");
+  background-image: url("../img/main-bg.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   width: 100%;
@@ -33,7 +33,7 @@
     max-width: 100%;
     min-height: 340px;
     background-color: #1f1f1f;
-    background-image: url("/img/main-bg-tablet.jpg");
+    background-image: url("../img/main-bg-tablet.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
     margin-bottom: 71px;
@@ -42,7 +42,7 @@
   @media (max-width: 767px) {
     max-width: 100%;
     background-color: #1f1f1f;
-    background-image: url("/img/main-bg-mobile.jpg");
+    background-image: url("../img/main-bg-mobile.jpg");
     background-position: 50% 0;
     background-repeat: no-repeat;
     margin-bottom: 71px;
@@ -59,7 +59,7 @@
     max-width: 100%;
     padding-top: 135px;
     padding-bottom: 80px;
-    padding-left: 15px;
+    padding-left: 4px;
     text-align: center;
   }
 
