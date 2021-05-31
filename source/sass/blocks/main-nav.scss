@@ -33,8 +33,9 @@
 }
 
 .main-nav__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
   width: 874px;
   padding-left: 33px;
   border-bottom: 1px solid #4b4b4b;
@@ -54,11 +55,7 @@
 
 .main-nav__list-item {
   position: relative;
-  margin-right: 135px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  padding-right: 10px;
 
   @media (max-width: 1023px) {
     background-color: #f6f6f6;

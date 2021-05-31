@@ -1,9 +1,9 @@
-.page__body {
+.page-body {
   background-color: $main-bg-color;
   font-family: $main-font-family;
 }
 
-.page__body + h2 {
+.page-body + h2 {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 600;

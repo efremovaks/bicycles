@@ -1,6 +1,6 @@
 .about {
   text-align: center;
-  margin-bottom: 128px;
+  margin-bottom: 102px;
 
   @media (min-width: $tablet-width) and (max-width: 1023px) {
     margin-bottom: 0;
@@ -76,7 +76,7 @@
 .about__list-item {
   position: relative;
   width: 263px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 
   @media (min-width: 1024px) and (max-width: 1439px) {
     width: 240px;
